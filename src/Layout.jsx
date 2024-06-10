@@ -9,7 +9,7 @@ function Layout() {
     <div className=''>
         <Header />
         {/* px-[5%] */}
-        <div className=' h-[71.5vh] overflow-auto '>
+        <div className=' h-[72vh] overflow-auto '>
             <Outlet/>
         </div>
         <FooterForm/>
