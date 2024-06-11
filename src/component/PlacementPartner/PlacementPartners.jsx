@@ -1,14 +1,34 @@
 import React from 'react'
-import CompaniesSlider from '../CompaniesSlider/CompaniesSlider'
+
+import WorkAtData from '../../data/WorkAtData'
 
 function PlacementPartners() {
-  return (
-    <div className='px-[9%] py-[5%] pb-[2%] text-center space-y-5'>
-        <h2 className='text-3xl font-semibold  text-zinc-800'> Our placement partners </h2>
+  console.log(WorkAtData)
 
-        <div className='relative'>
-            <CompaniesSlider />
+  const companies = WorkAtData.map(item => {
+    return <div className=' relative rounded-md overflow-hidden border border-slate-400 h-28 w-40  transition-all duration-200 ease-linear '>
+      <div className=' absolute top-0 bg-white h-full w-full bg-blac px-3 py-1 hover:opacity-0 duration-150 '>
+        <img src={item.image} alt="" className=' w-36 ' />
+      </div>
+      <div className='flex justify-center items-center h-full w-full bg-sky-800 text-zinc-50 px-4 capitalize  '>
+        <p className='tracking-wide text-lg leading-6 font-normal '> {item.title} </p>
+      </div>
+    </div>
+  } )
+
+  return (
+    <div className='py-[5%] px-5 md:px-[9%] text-cente space-y-6 capitalize'>
+        <h2 className=' px-6 text-3xl text-zinc-800 '> Our placement partners </h2>
+
+        <div className='flex justify-center flex-wrap gap-5 '>
+          {
+            WorkAtData &&  companies
+          }
         </div>
+
+        {/* <div className='relative'>
+            <CompaniesSlider />
+        </div> */}
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 function EnquiryForm() {
   return (
-    <div className=" -mt-5 shadow-lg bg-zinc-50 shadow-gray-400 rounded-lg overflow-hidden">
+    <div className="  shadow-lg bg-zinc-50 shadow-gray-400 rounded-lg overflow-hidden">
       <form className="space-y-4">
         <h2 className="bg-blue-600 text-zinc-50 text-center capitalize py-2.5 "> enquiry now </h2>
         <div className="space-y-5 px-5 pt-3 pb-5 ">

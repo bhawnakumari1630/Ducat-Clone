@@ -9,7 +9,7 @@ function ExploreCourses() {
         </div> )
 
   return (
-    <div className='py-[5%]  px-[7.5%] space-y-8 '>
+    <div className='py-[8%] lg:py-[5%] px-5  md:px-[9%] space-y-8 '>
         <h2 className="text-2xl font-semibold  text-zinc-800 capitalize ">
             explore courses
         </h2>

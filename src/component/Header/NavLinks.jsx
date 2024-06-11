@@ -12,7 +12,7 @@ function NavLinks() {
   const [listShow, setListShow] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:3000/course")
+    fetch("https://ducat-data-1.onrender.com/course")
       .then((res) => res.json())
       .then((res) => setCourses(res));
   }, []);
@@ -45,7 +45,7 @@ function NavLinks() {
             {listShow ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}
           </div>
           <div
-            className={`absolute z-20 top-8 -left-1 px-2 py-2 w-[370%] text-[14.5px] bg-white border border-gray-300 shadow rounded-md overflow-auto ${
+            className={`absolute w-[90%] h-[50vh] lg:h-auto lg:w-[500%] z-20 top-8 lg:-left-1 px-2 py-2 text-[14.5px] bg-white border border-gray-300 shadow rounded-md overflow-auto ${
               listShow ? "inline" : "hidden"
             } `}
           >
@@ -60,25 +60,26 @@ function NavLinks() {
       <p className="px-1 hover:text-zinc-700 ">
         <NavLink to={"/placement"}> Placements </NavLink>
       </p>
-      <p className=" relative px-1 hover:text-zinc-700 text-center -mt-6 ">
-        <NavLink to={"/career-guidance"} as={""}>
-          <div className=" inline-flex gap-[2px] items-center tracking-wider  rounded-full px-2 py-1 text-zinc-100 text-xs bg-orange-500 border border-orange-400 ">
-            <AiFillThunderbolt />
-            <span className=" text-[10px] uppercase font-sans font-semibold ">
-              {" "}
-              AI-powered{" "}
-            </span>
-          </div>
+
+      <NavLink to={"/career-guidance"} as={""} className="">
+        <p className=" flex gap-[10%] lg:gap-0 lg:flex-col-reverse items-center  px-1 hover:text-zinc-700 text-cente mt-4 lg:-mt-6 ">
           <div className="flex items-center gap-1">
             <img
               src="https://www.ducatindia.com/_next/image?url=%2Fstatic%2Fimages%2Fbadge.webp&w=32&q=75"
               alt=""
-              className="size-6"
+              className=" size-4 lg:size-6"
             />
             <span> Career Guidance </span>
           </div>
-        </NavLink>
-      </p>
+          <div className=" text-[10px]  inline-flex gap-[2px] items-center tracking-wider  rounded-full px-2 py-1 text-zinc-100 lg:text-xs bg-orange-500 border border-orange-400 ">
+            <AiFillThunderbolt />
+            <span className=" text-[8px] uppercase font-sans font-semibold ">
+              {" "}
+              AI-powered{" "}
+            </span>
+          </div>
+        </p>
+      </NavLink>
       <p className="px-1 hover:text-zinc-700 ">
         <NavLink to={"/blog"}> Blog </NavLink>
       </p>

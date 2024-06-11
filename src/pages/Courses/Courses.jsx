@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom";
 import CourseDetail from "./CourseDetail";
 import HomeBar from "../../component/homeBar/HomeBar";
 import ExploreCourses from "../../component/exploreCourses/ExploreCourses";
+import Reviews from "../../component/ReviewCards/Reviews";
+import Footer from "../../component/Footer/Footer";
 
 export default function Courses() {
   const [courseData, setCourseData] = useState([]);
@@ -12,18 +14,29 @@ export default function Courses() {
 
 
   useEffect(() => {
-    fetch(`http://localhost:3000/course/${id}`)
+    // fetch(`http://localhost:3000/course/${id}`)
+    fetch(`https://ducat-data-1.onrender.com/course/${id}`)
       .then((res) => res.json())
       .then((res) => setCourseData(res));
   }, [id]);
 
   return (
-    <div className="w-full pb-[5%] " >
-      <div className="lg:flex lg:gap-[5%]  py-[5%]  px-[7.5%] " style={{ background : '#E8F7FF' }}>
-        { courseData && <CourseDetail details={courseData} /> }
+    <div className="w-full pb-[5%]  " >
+      <div className="pb-[5%] lg:grid grid-cols-3 gap-[4%] py-[5%]  px-[6%]  " style={{ background : '#E8F7FF' }}>
+        <div className="lg:flex lg:gap-[5%] col-span-2 " >
+          { courseData && <CourseDetail details={courseData} /> }
+        </div>
+
+        <div className=" mx-auto mt-[6%] lg:mt-0 lg:mx-0 min-w-[20rem] max-w-[23rem]">
+          <EnquiryForm />
+        </div>
       </div>
       <ExploreCourses />
       <HomeBar />
+      <div className="py-[4%]  px-[%] ">
+       <Reviews />
+      </div>
+      <Footer />
 
     </div>
   );
