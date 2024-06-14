@@ -1,5 +1,5 @@
 
-const PlacementRecord_Data = [
+export const PlacementRecord_Data = [
     {
         id : 1, 
         name : "vikas",
@@ -11,7 +11,7 @@ const PlacementRecord_Data = [
     {
         id : 2, 
         name : "rakesh kumar",
-        image : "https://www.shutterstock.com/image-photo/young-smiling-business-university-student-260nw-1937739820.jpg",
+        image : "https://media.istockphoto.com/id/2105280771/photo/professional-man-working-on-a-laptop-in-a-modern-office-setting.webp?b=1&s=170667a&w=0&k=20&c=TWdznicaM6j-3BSu7UKnO_fkaijcbtMwTn27O5Cu4eU=",
         profile : "Java Developer",
         package : '5 LPA/-',
         company : 'Vivo India P.Ltd.'
@@ -35,7 +35,7 @@ const PlacementRecord_Data = [
     {
         id : 5, 
         name : "vipin",
-        image : "https://admin.ducatindia.com/placedStudents/1682762830317IMG-20230429-WA0001.jpg",
+        image : "https://t4.ftcdn.net/jpg/02/84/52/99/360_F_284529974_4gQdVf3pGjhWEdS5FmlaRdmfsXcwaa3U.jpg",
         profile : "web designer",
         package : '5 LPA/-',
         company : 'Paytel Financial Technologies P.Ltd.'
@@ -75,7 +75,7 @@ const PlacementRecord_Data = [
     {
         id : 10, 
         name : "vickky mittal",
-        image : "https://admin.ducatindia.com/placedStudents/1682762830317IMG-20230429-WA0001.jpg",
+        image : "https://t4.ftcdn.net/jpg/03/83/30/07/360_F_383300738_hWLn1AksIpVnhy2uHTj90HGp21lYWAV3.jpg",
         profile : "quality testing",
         package : '8 LPA/-',
         company : 'indipaisa'

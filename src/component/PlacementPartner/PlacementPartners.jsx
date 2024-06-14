@@ -17,10 +17,10 @@ function PlacementPartners() {
   } )
 
   return (
-    <div className='py-[7%] pb-[10%]  px-5 md:px-[9%] md:py-[6%] lg:py-[5%] space-y-6 capitalize'>
-        <h2 className=' px-6 text-3xl text-zinc-800 '> Our placement partners </h2>
+    <div className='py-[7%] pb-[10%]  px-5 md:px-[7%] md:pb-[8%] lg:pb-[5%] space-y-8 capitalize'>
+        <h2 className=' px-3 text-3xl text-zinc-800 '> Our placement partners </h2>
 
-        <div className='flex justify-center flex-wrap gap-5 '>
+        <div className=' px-[2%] grid grid-cols-4 lg:grid-cols-5 place-items-center gap-5 '>
           {
             WorkAtData &&  companies
           }

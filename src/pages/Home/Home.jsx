@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSection from "../../component/HeroSection/HeroSection";
+import HeroSection from "../../component/HeroSections/HeroSection";
 import HomeBar from "../../component/homeBar/HomeBar";
 import TopPrograms from "../../component/TopPrograms/TopPrograms";
 import WorkAt from "../../component/WorkAt/WorkAt";
@@ -13,7 +13,7 @@ import FooterForm from "../../component/Footer/FooterForm";
 function Home() {
   return (
     <div className="flex flex-col  ">
-      <div className=" flex-1 ">
+      <div className=" flex-1 pb-7 md:pb-0 ">
         <HeroSection />
         <HomeBar />
         <TopPrograms />
@@ -24,7 +24,7 @@ function Home() {
         <PlacementPartners />
         <Footer />
       </div>
-      <div className="lg:h-24 h-[10.5rem] ">
+      <div className="md:h-28  h-[11rem] ">
         <FooterForm />
       </div>
     </div>

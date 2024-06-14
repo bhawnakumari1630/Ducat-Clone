@@ -1,24 +1,39 @@
-import React from 'react'
+import React from "react";
+import { PlacementRecord_Data } from "../../data/PlacementData";
 
 function PlacementRecord() {
-  return (
-    <div>
-        
+  const PlacementCard = PlacementRecord_Data.map((item) => {
+    console.log(item);
+    return (
+      <div
+        key={item.id}
+        className="flex flex-row md:pt-20 lg:pt-16 lg:h-64 sm:w-xs md:w-[22rem] lg:w-sm md:flex-col items-center bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 relative "
+      >
+        <img
+          src={item.image}
+          className="object-cover w-52 md:w-36 lg:w-[8rem] h-auto md:h-36 lg:h-[8rem]  md:rounded-full  md:absolute -top-14 ring  "
+          alt=""
+        />
+        <div className="flex flex-col justify-between text-center md:px-6 md:py-5 md:mt-2 leading-normal space-y-1">
+          <h5 className="mb-2 capitalize text-xl font-bold tracking-tight text-gray-800 dark:text-white">
+            {item.name}
+          </h5>
+          <dl className="grid grid-cols-2 gap-y-1.5 text-sm ">
+            <dt className=" text-zinc-700 font-medium "> job profile - </dt>
+            <dd className=" text-zinc-600 "> {item.profile} </dd>
 
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
-    </a>
-    <div class="p-5">
-        <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-        </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-    </div>
-</div>
+            <dt className=" text-zinc-700 font-medium "> package - </dt>
+            <dd className=" text-zinc-600 "> {item.package} </dd>
 
-    </div>
-  )
+            <dt className=" text-zinc-700 font-medium "> company - </dt>
+            <dd className=" text-zinc-600 "> {item.company} </dd>
+          </dl>
+        </div>
+      </div>
+    );
+  });
+
+  return <>{PlacementCard}</>;
 }
 
-export default PlacementRecord
+export default PlacementRecord;

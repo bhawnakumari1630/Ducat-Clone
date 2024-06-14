@@ -8,6 +8,7 @@ import Others from './pages/Others/Others';
 import CareerGuidance from './pages/Career guidance/CareerGuidance';
 import Blog from './pages/Blog/Blog';
 import Courses from './pages/Courses/Courses';
+import About_Us from './pages/AboutUs/About_Us';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
      <Routes>
       <Route path='/' element={<Layout/>} >
         <Route path='/' element={<Home />}/>
+        <Route path='/about-us' element={<About_Us />}/>
         <Route path='/courses/:id' element={<Courses />}/>
         {/* <Route path='/courses' element={<Courses />}/> */}
         <Route path='/corporate-training' element={<CorporateTraining />}/>

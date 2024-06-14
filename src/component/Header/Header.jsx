@@ -12,8 +12,8 @@ export default function Header() {
   return (
     <ShowCourse.Provider value={{showMenuItem , setShowMenuItem}}>
       
-      <div className="sticky top-0 z-50 px-[8%] lg:px-[5%] py-[2%] bg-slate-50 flex justify-between items-center lg:justify-around flex-row-reverse lg:flex-row gap-3 transition-all duration-300 ease-linear ">
-        <div className=" ">
+      <div className="sticky top-0 z-50 ps-[8%] pe-[2%] lg:ps-[5%] py-[2%] bg-slate-50 flex justify-between items-center lg:justify-between flex-row-reverse lg:flex-row  transition-all duration-300 ease-linear ">
+        <div className="ps-[3%] ">
           <NavLink to={"/"}>
             <img
               src="https://www.ducatindia.com/_next/image?url=%2Fstatic%2Fimages%2Flogo.png&w=128&q=75"
@@ -35,13 +35,13 @@ export default function Header() {
         <div
           className={`${
             showMenuItem ? " left-0 " : " -left-[90%] sm:left-[-60%] "
-          } fixed h-[90vh] top-[4.5rem] md:top-[5.5rem] lg:hidden ps-[5%] pe-7 p-3 space-y-4 w-[90%] sm:w-[40%] sm:max-w-96 bg-slate-50 lg:left-[90%]  text-zinc-500 font-normal transition-all duration-[400ms] ease-linear `}
+          }  fixed h-[90vh] top-[4.5rem] md:top-[5.5rem] lg:hidden ps-[5%] pe-7 p-3 space-y-4 w-[90%] sm:w-[40%] sm:max-w-96 bg-slate-50 lg:left-[90%]  text-zinc-500 font-normal transition-all duration-[400ms] ease-linear `}
         >
           <div
             onClick={() => setShowMenuItem(false)}
             className=" flex justify-end "
           >
-            <div className=" w-6 h-6  flex justify-center items-center border rounded-md hover:border-zinc-400 hover:text-zinc-600 ">
+            <div className=" w-6 h-6 flex-1 md:flex-[0.7] flex justify-center items-center border rounded-md hover:border-zinc-400 hover:text-zinc-600 ">
               <RxCross2 />
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function Header() {
         {/* end menu slider */}
 
         {/* lg: navbar */}
-        <div className=" hidden lg:static flex-[0.85] lg:flex justify-between items-center  text-zinc-500 font-normal ">
+        <div className=" hidden lg:static flex-1 lg:flex-[0.95] lg:flex justify-between items-center  text-zinc-500 font-normal ">
           <NavLinks />
         </div>
         {/* end lg: navbar */}

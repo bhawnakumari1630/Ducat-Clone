@@ -65,6 +65,9 @@ function NavLinks() {
         </NavLink>
       </p>
       <p onClick={()=> setShowMenuItem(prev => !prev)}  className="px-1 hover:text-zinc-700 ">
+        <NavLink to={"/about-us"}> About us </NavLink>
+      </p>
+      <p onClick={()=> setShowMenuItem(prev => !prev)}  className="px-1 hover:text-zinc-700 ">
         <NavLink to={"/corporate-training"}> Corporate Training </NavLink>
       </p>
       <p onClick={()=> setShowMenuItem(prev => !prev)}  className="px-1 hover:text-zinc-700 ">
