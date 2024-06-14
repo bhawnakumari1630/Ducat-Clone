@@ -2,7 +2,7 @@ import React from "react";
 
 function FooterForm() {
   return (
-    <div className="fixed z-10 hidden sm:block w-full bottom-0 px-[5%] py-8 bg- bg-sky-800 ">
+    <div className=" fixed py-5 md:py-[3%] z-10  sm:block w-full bottom-0 px-[5%]  bg-sky-800 ">
       <form className=" grid grid-cols-3 mb-5 md:mb-0 md:flex items-center justify-between gap-3 ">
         <div className="flex-1">
           <input
@@ -49,11 +49,11 @@ function FooterForm() {
             required
           />
         </div>
-        <div className="hidden md:inline w-auto flex-1 md:flex-[0.4] text-center bg-yellow-500 text-zinc-950 px-5 py-1.5 rounded-lg ring-yellow-400 hover:ring font-semibold ">
+        <div className="hidden md:inline w-auto flex-1 md:flex-[0.45] text-center  bg-yellow-400 hover:bg-yellow-500 px-5 py-1.5 rounded-lg ring-yellow-300  hover:ring  font-semibold text-zinc-950   ">
           <button className=" "> submit </button>
         </div>
       </form>
-      <div className="md:hidden inline px-12 mx-auto text-center bg-yellow-500 text-zinc-950 py-1.5 rounded-lg ring-yellow-400 hover:ring font-semibold ">
+      <div className="md:hidden inline px-12 mx-auto text-center  py-1.5 rounded-lg  hover:ring font-semibold bg-yellow-400 hover:bg-yellow-500 ring-yellow-300   text-zinc-950  ">
         <button className=" "> submit </button>
       </div>
     </div>

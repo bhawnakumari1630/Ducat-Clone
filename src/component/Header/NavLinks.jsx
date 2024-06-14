@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AiFillThunderbolt } from "react-icons/ai";
 import {
   IoMdArrowDropdown,
@@ -6,10 +6,17 @@ import {
   IoMdArrowDropup,
 } from "react-icons/io";
 import { NavLink } from "react-router-dom";
+import { ShowCourse } from "./Header";
 
 function NavLinks() {
+
+  const isShow = useContext(ShowCourse)
+  const {showMenuItem , setShowMenuItem} = isShow
+  // console.log(showMenuItem)
+
   const [courses, setCourses] = useState([]);
   const [listShow, setListShow] = useState(false);
+
 
   useEffect(() => {
     fetch("https://ducat-data-1.onrender.com/course")
@@ -21,7 +28,10 @@ function NavLinks() {
     return (
       <p
         className=" hover:bg-slate-300 px-2 py-0.5 hover:text-zinc-800 rounded-md capitalize "
-        onClick={() => setListShow((prev) => !prev)}
+        onClick={() => {
+          setListShow((prev) => !prev) 
+          setShowMenuItem(prev => !prev)
+        }}
       >
         <NavLink to={`courses/${item.id}`} as={""} key={item.id}>
           {item.title}
@@ -32,7 +42,7 @@ function NavLinks() {
 
   return (
     <>
-      <p className="px-1 hover:text-zinc-700 ">
+      <p onClick={()=> setShowMenuItem(prev => !prev)} className="px-1 hover:text-zinc-700 ">
         <NavLink to={"/"}> Home </NavLink>
       </p>
       <p className="px-1 relative ">
@@ -45,7 +55,7 @@ function NavLinks() {
             {listShow ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}
           </div>
           <div
-            className={`absolute w-[90%] h-[50vh] lg:h-auto lg:w-[500%] z-20 top-8 lg:-left-1 px-2 py-2 text-[14.5px] bg-white border border-gray-300 shadow rounded-md overflow-auto ${
+            className={`absolute w-[70%] h-[50vh] lg:h-auto lg:w-[400%] z-20 top-8 lg:-left-1 px-2 py-2 text-[14.5px] bg-white border border-gray-300 shadow rounded-md overflow-auto ${
               listShow ? "inline" : "hidden"
             } `}
           >
@@ -54,10 +64,10 @@ function NavLinks() {
           </div>
         </NavLink>
       </p>
-      <p className="px-1 hover:text-zinc-700 ">
+      <p onClick={()=> setShowMenuItem(prev => !prev)}  className="px-1 hover:text-zinc-700 ">
         <NavLink to={"/corporate-training"}> Corporate Training </NavLink>
       </p>
-      <p className="px-1 hover:text-zinc-700 ">
+      <p onClick={()=> setShowMenuItem(prev => !prev)}  className="px-1 hover:text-zinc-700 ">
         <NavLink to={"/placement"}> Placements </NavLink>
       </p>
 

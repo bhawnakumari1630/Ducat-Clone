@@ -11,13 +11,13 @@ function PlacementPartners() {
         <img src={item.image} alt="" className=' w-36 ' />
       </div>
       <div className='flex justify-center items-center h-full w-full bg-sky-800 text-zinc-50 px-4 capitalize  '>
-        <p className='tracking-wide text-lg leading-6 font-normal '> {item.title} </p>
+        <p className='tracking-wide text-center text-lg leading-6 font-normal '> {item.title} </p>
       </div>
     </div>
   } )
 
   return (
-    <div className='py-[5%] px-5 md:px-[9%] text-cente space-y-6 capitalize'>
+    <div className='py-[7%] pb-[10%]  px-5 md:px-[9%] md:py-[6%] lg:py-[5%] space-y-6 capitalize'>
         <h2 className=' px-6 text-3xl text-zinc-800 '> Our placement partners </h2>
 
         <div className='flex justify-center flex-wrap gap-5 '>
@@ -25,10 +25,6 @@ function PlacementPartners() {
             WorkAtData &&  companies
           }
         </div>
-
-        {/* <div className='relative'>
-            <CompaniesSlider />
-        </div> */}
     </div>
   )
 }

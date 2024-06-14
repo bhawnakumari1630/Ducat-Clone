@@ -8,11 +8,11 @@ function Layout() {
   return (
     <div className=''>
         <Header />
-        {/* px-[5%] */}
-        <div className='pb-48 sm:pb-11 md:pb-12 lg:pb-10 min-h-[72vh] overflow-auto '>
+
+        <div className=' overflow-auto '>
             <Outlet/>
         </div>
-        <FooterForm/>
+        {/* <FooterForm/> */}
     </div>
   )
 }

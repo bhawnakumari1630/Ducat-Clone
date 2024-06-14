@@ -23,12 +23,12 @@ function UpcomingBatches() {
   // console.log(batches)
 
   return (
-    <div className={`capitalize  py-[2%]  overflow-hidden `}>
+    <div className={`capitalize py-[7%] md:py-[6%] lg:py-[4%] overflow-hidden `}>
       <div className="space-y-5 px-[9%] ">
         <h2 className="text-3xl  text-zinc-800">Upcoming batches</h2>
 
         {/* <div> */}
-        <p className="text-xl text-zinc-800 "> select a branch </p>
+        <p className="text-xl text-zinc-700 "> select a branch </p>
 
         <div className=" px-6 pe-8 flex  justify-between items-center ">
           <select
@@ -55,8 +55,8 @@ function UpcomingBatches() {
         {/* </div> */}
       </div>
 
-      <div className="px-5 md:px-[9%] pt-[4%] ">
-        <div className="px-5 py-8 overflow-auto scrollNone  ">
+      <div className="px-5 md:px-[7%] mt-[4%] ">
+        <div className="px-[5.5%] py-[1%] overflow-auto scrollNone  ">
           <div ref={Ref_cardSlider} className=" flex gap-5 ">
             { 
               batches.map((item) => {

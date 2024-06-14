@@ -5,7 +5,7 @@ function BatchesCard( {batch}) {
     const { id , title , branch, image, start_Date  } = batch
   return (
     <>
-      <div className=" min-w-60 w-60 pt-5 pb-6  shadow-md shadow-gray-400 rounded-md text-zinc-800 ">
+      <div className=" min-w-60 w-60 pt-5 pb-6 border border-gray-100 hover:border-gray-300 shadow-md shadow-gray-400 rounded-md text-zinc-800 ">
         <div className=" h-28 border-b border-gray-300 w-full">
           <img
             src={image}

@@ -7,11 +7,11 @@ function StudentReviews() {
     const reviews = ReviewsData.map(item => <Reviews data={item} /> )
 
   return (
-    <div className='pt-[5%] pb-[2%]  lg:pt-[2%] lg:pb-0 min-h-fit   px-5 md:px-[4%] space-y-0 '>
-        <h2 className='px-[5%] text-3xl  text-zinc-800 capitalize '> hundreds of happy students </h2>
+    <div className=' pt-[7%] pb-0  md:py-[6%] md:pb-[3%] space-y-5 md:space-y-2 px-[1%] md:px-[4%] '>
+        <h2 className='px-[8%] text-3xl  text-zinc-800 capitalize '> hundreds of happy students </h2>
         
-        <div>
-        <Reviews />
+        <div className=''>
+         <Reviews />
         </div>
     </div>
   )
