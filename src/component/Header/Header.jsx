@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <ShowCourse.Provider value={{showMenuItem , setShowMenuItem}}>
       
-      <div className="sticky top-0 z-50 ps-[8%] pe-[2%] lg:ps-[5%] py-[2%] bg-slate-50 flex justify-between items-center lg:justify-between flex-row-reverse lg:flex-row  transition-all duration-300 ease-linear ">
+      <div className="sticky top-0 z-50 ps-[8%] pe-[2%] lg:pe-[3%] lg:ps-[5%] py-[2%] bg-slate-50 flex gap-[2%] justify-between items-center flex-row-reverse lg:flex-row  transition-all duration-300 ease-linear ">
         <div className="ps-[3%] ">
           <NavLink to={"/"}>
             <img
@@ -50,7 +50,7 @@ export default function Header() {
         {/* end menu slider */}
 
         {/* lg: navbar */}
-        <div className=" hidden lg:static flex-1 lg:flex-[0.95] lg:flex justify-between items-center  text-zinc-500 font-normal ">
+        <div className=" hidden lg:static flex-1 lg:flex-[0.95] lg:flex justify-around items-center  text-zinc-500 font-normal ">
           <NavLinks />
         </div>
         {/* end lg: navbar */}

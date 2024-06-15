@@ -1,5 +1,5 @@
 
- const course = [
+export const course = [
     {
       id: "1",
       "title": "new courses",

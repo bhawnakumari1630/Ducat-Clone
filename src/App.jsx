@@ -22,10 +22,10 @@ function App() {
         {/* <Route path='/courses' element={<Courses />}/> */}
         <Route path='/corporate-training' element={<CorporateTraining />}/>
         <Route path='/placement' element={<Placements />}/>
-        <Route path='/career-guidance' element={<CareerGuidance />}/>
         <Route path='/blog' element={<Blog />}/>
         <Route path='/others' element={<Others />}/>
       </Route>
+        <Route path='/career-guidance' element={<CareerGuidance />}/>
      </Routes>
     </BrowserRouter>
   )

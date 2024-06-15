@@ -21,6 +21,18 @@ body{
     color: white;
 }
 
+.enquiryForm2 select {
+    color: #71717A
+}
+.enquiryForm2 select option {
+    font-size: 14px ;
+    color: #5f5f66
+}
+
+.cardShadow2{
+    box-shadow:  rgba(230, 132, 97, 0.927) 1px 1px 8px;;
+}
+
 
 /* workAt css */
 .scrollNone::-webkit-scrollbar{

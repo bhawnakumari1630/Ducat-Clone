@@ -5,10 +5,8 @@ import SearchBar_Courses from '../searchBar_Courses/SearchBar_Courses'
 function HeroSection() {
 
   const [data , setData] = useState([])
-  console.log(heroSectionData)
-  useEffect(()=>{
-    
-  },[])
+  // console.log(heroSectionData)
+
 
   return (
     <div className='py-[3vh]  lg:py-[2%] px-5 md:px-[9%] grid grid-cols-2 h-full items-center  '>
