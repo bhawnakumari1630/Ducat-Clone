@@ -7,7 +7,7 @@ function RightCourse() {
     const rightCourses = RightCourse_Data.map(item => <RightCourse_Card key={`right-course-${item.title}`} data={item} /> )
 
   return (
-    <div className={`capitalize py-[7%] pb-[2%] md:py-[6%] lg:py-[4%] overflow-hidden `}>
+    <div className={`capitalize py-[7%] pb-[2%] md:py-[6%] lg:py-[3%] lg:pb-[1%] overflow-hidden `}>
       <div className="space-y-10 px-[6%] ">
         <h2 className="text-3xl px-[3%] text-zinc-800"> find the right course for you  </h2>
 

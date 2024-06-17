@@ -30,7 +30,7 @@ function FAQ() {
                 </div>
               </div>
               
-              {singleSelect === data.id && <div className="ans text-orange-600 px-6 pt-2.5  border-t "> {data.ans} </div>
+              {singleSelect === data.id && <div className="ans text-orange-600 px-6 pt-2.5 pb-3  border-t "> {data.ans} </div>
               }
             </div>
           </>)

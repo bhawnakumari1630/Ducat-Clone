@@ -17,7 +17,7 @@ function PlacementPartners() {
   } )
 
   return (
-    <div className='py-[7%] pb-[10%]  px-5 md:px-[7%] md:pb-[8%] lg:pb-[5%] space-y-8 capitalize'>
+    <div className='py-[7%] pb-[10%]  px-5 md:px-[7%] md:pb-[8%] lg:pt-[3%] lg:pb-[5%] space-y-8 capitalize'>
         <h2 className=' px-3 text-3xl text-zinc-800 '> Our placement partners </h2>
 
         <div className=' px-[2%] grid grid-cols-4 lg:grid-cols-5 place-items-center gap-5 '>

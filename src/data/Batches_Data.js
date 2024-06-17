@@ -1,4 +1,4 @@
-export const Batches_Data = [
+export const Batches_Data = [ 
   {
     id: 1 ,
     title: "java",

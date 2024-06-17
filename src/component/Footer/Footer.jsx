@@ -83,7 +83,7 @@ function Footer() {
               {" "}
               follow us{" "}
             </h3>
-            <div className="inline-flex   justify-between gap-1 text-2xl  text-zinc-400">
+            <div className="inline-flex   justify-between gap-1 text-2xl  text-zinc-200">
               <FaInstagram className=" hover:text-white " />
               <FaFacebookF className=" hover:text-white " />
               <TfiYoutube className=" hover:text-white " />

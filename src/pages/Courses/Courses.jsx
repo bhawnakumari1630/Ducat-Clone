@@ -21,7 +21,7 @@ export default function Courses() {
   }, [id]);
 
   return (
-    <div className="w-full pb-[5%]  " >
+    <div className="w-full pb-[%]  " >
       <div className="pb-[5%] lg:grid grid-cols-3 gap-[4%] py-[5%]  px-[6%]  " style={{ background : '#E8F7FF' }}>
         <div className="lg:flex lg:gap-[5%] col-span-2 " >
           { courseData && <CourseDetail details={courseData} /> }
@@ -33,7 +33,7 @@ export default function Courses() {
       </div>
       <ExploreCourses />
       <HomeBar />
-      <div className="py-[4%]  px-[%] ">
+      <div className="pb-[4%] pt-[3%]  px-[%] ">
        <Reviews />
       </div>
       <Footer />

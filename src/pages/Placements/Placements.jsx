@@ -23,7 +23,7 @@ function Placements() {
       </div>
 
       <div className=" flex-1 ">
-        <div className="  px-[5%] pt-[7%] pb-[4%] grid grid-cols-2 lg:grid-cols-3 md:gap-x-6 lg:gap-x-5 gap-y-24 place-items-center ">
+        <div className="  px-[5%] pt-[7%] pb-[4%] grid grid-cols-2 lg:grid-cols-3 md:gap-x-4 lg:gap-x-1 gap-y-24 place-items-center ">
           <PlacementRecord />
         </div>
         <div className=" text-center py-[5%]  space-y-5 md:space-y-10 px-[1%] md:px-[4%] ">

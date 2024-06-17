@@ -13,12 +13,13 @@ import TopCourses from "../../component/CorporateTraining_body/TopCourses";
 import OurSuccess from "../../component/CorporateTraining_body/OurSuccess";
 import EmpowerWorkforce from "../../component/CorporateTraining_body/EmpowerWorkforce";
 import FAQ from "../../component/CorporateTraining_body/FAQ";
+import Reviews from "../../component/ReviewCards/Reviews";
 
 function CorporateTraining() {
   return (
     <div>
       <HeroSection_Corporate />
-      <div className=" text-center py-[5%]  space-y-5 md:space-y-10 px-[1%] md:px-[4%] ">
+      <div className=" text-center pt-[5%] pb-0 space-y-5 md:space-y-10 px-[1%] md:px-[4%] ">
         <h2 className=" border-b-4 border-orange-400 inline  pb-1 text-3xl text-zinc-900 font-semibold capitalize ">
           {" "}
           our placement partners{" "}
@@ -26,8 +27,8 @@ function CorporateTraining() {
         <CompaniesSlider />
       </div>
       <div className=" lg:px-0 ">
-      <WhyChoose />
       <EmployeeEmpowered />
+      <WhyChoose />
       <WhatIs />
       <WhyImportant />
       <WhatWeOffer />
@@ -37,6 +38,7 @@ function CorporateTraining() {
       <OurSuccess />
       <EmpowerWorkforce />
       <FAQ />
+      <Reviews showStar='true' />
       </div>
       <Footer />
     </div>

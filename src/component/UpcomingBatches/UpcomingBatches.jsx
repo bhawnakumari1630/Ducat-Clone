@@ -23,7 +23,7 @@ function UpcomingBatches() {
   // console.log(batches)
 
   return (
-    <div className={`capitalize py-[7%] md:py-[6%] lg:py-[4%] overflow-hidden `}>
+    <div className={`capitalize py-[7%] md:py-[6%] lg:py-[3%] overflow-hidden `}>
       <div className="space-y-5 px-[9%] ">
         <h2 className="text-3xl  text-zinc-800">Upcoming batches</h2>
 

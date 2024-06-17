@@ -26,7 +26,7 @@ function TopPrograms() {
 
   return (
     // ${showAll ? 'h-full' : ' h-[70vh] md:h-[65vh]' } overflow-hidden 
-    <div className={`capitalize py-[7%] px-[5%] md:px-[9%] md:py-[6%] lg:pt-[6%]  lg:py-[4%] `}>
+    <div className={`capitalize py-[7%] px-[5%] md:px-[9%] md:py-[6%] lg:pt-[6%]  lg:py-[3%] `}>
       <div className="flex items-center justify-between mb-[6%] lg:mb-12 ">
         <h2 className="text-3xl  text-zinc-800">
           {" "}

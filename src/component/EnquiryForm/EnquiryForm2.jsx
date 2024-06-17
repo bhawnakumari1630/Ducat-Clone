@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import course from "../../data/CoursesData";
 
-function EnquiryForm2() {
+function EnquiryForm2({formWidth}) {
   const [enquiryDetail, setEnquiryDetail] = useState({
     name: "",
     email: "",
@@ -24,12 +24,16 @@ function EnquiryForm2() {
   // },[enquiryDetail])
 
   return (
-    <div className=" shadow-md shadow-gray-500 bg-white max-w-md p-[5%] text-[13.5px] font-normal text-slate-800 capitalize rounded-xl overflow-hidden space-y-7 ">
-        <div className="text-center uppercase text-lg font-bold font-sans text-zinc-800 ">
+    <div className={` ${formWidth ? ' mx-auto max-w-4xl pt-0 pb-[1%] ' : 'max-w-md py-[5%] px-[5%] space-y-7 text-[13.5px] ' }  shadow-md shadow-gray-500 bg-white   font-normal text-slate-800 capitalize rounded-xl overflow-hidden `}>
+        <div className={`text-center uppercase text-lg font-bold font-sans text-zinc-800 ${formWidth && 'hidden'} `}>
             <h2 className=" border-b-4 border-orange-400 inline  pb-1  "> enquiry now </h2>
         </div>
+        <div className={` ${formWidth ? 'block' : 'hidden' } text-center bg-blue-900/85 py-3 text-2xl capitalize font-medium text-zinc-50 tracking-wide font-sans `}>
+            <h2> online registration form </h2>
+        </div> 
+        
 
-      <form className="enquiryForm2 space-y-3">
+      <form className={` ${formWidth ? 'space-y-5 px-[5%] py-[4%] ' : 'space-y-3' } enquiryForm2 `}>
         <div className=" grid grid-cols-2 gap-3 ">
           <div className="space-y-3">
             <div className="">
