@@ -5,7 +5,7 @@ import { TfiYoutube } from "react-icons/tfi";
 
 function Footer() {
   return (
-    <div className="footer w-full bottom-0 px-[5%] py-[5%] bg-blue-950 ">
+    <div className="footer w-full bottom-0 px-6 py-8 md:px-[5%] md:py-[5%] bg-blue-950 ">
       <div className="w-full grid grid-cols-1 lg:grid-cols-3 md:text-base text-zinc-300 font-light xl:gap-[5%]  ">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:col-span-2 space-y-10 md:space-y-0 text-sm  md:gap-[7%]  ">
           <div>
@@ -62,7 +62,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 pt-5 items-center lg:items-start lg:pt-0 lg:ps-[5%] ">
+        <div className="grid grid-cols-2 pt-7 md:pt-5 items-center lg:items-start lg:pt-0 lg:ps-[5%] ">
           <div className="text-sm">
             <h3 className=" font-medium text-xl pb-3 capitalize text-zinc-200 ">
               {" "}

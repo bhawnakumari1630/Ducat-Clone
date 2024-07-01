@@ -11,7 +11,7 @@ function FAQ() {
     setSingleSelect(singleSelect === currentId ? null : currentId);
   }
   return (
-    <div className=" space-y-12 px-[3%] md:px-[8%] py-[4%] ">
+    <div className=" space-y-12 px-5 pb-16 md:px-[8%] pt-[5%] md:py-[5%] md:pb-[7%] ">
       <div className="text-center">
         <h2 className=" border-b-4 border-orange-400 inline  pb-1 text-3xl text-zinc-900 font-semibold capitalize ">
           FAQ's

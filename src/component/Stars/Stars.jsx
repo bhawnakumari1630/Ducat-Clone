@@ -8,7 +8,7 @@ function Stars() {
         <BsStarFill />
         <BsStarFill />
         <BsStarFill />
-        <BsStarHalf className="fill-gray-600" />
+        <BsStarHalf className="fill" />
         <BsStarFill className="fill-gray-600" />
       </div>
     </>

@@ -13,7 +13,7 @@ function ForCorporates() {
   ));
   return (
     <div
-      className="px-[3%] md:px-[8%] py-[6%] grid grid-cols-1 gap-14 md:gap-0 md:grid-cols-2 bg-cover bg-no-repeat "
+      className=" px-8 md:px-[8%] py-[10%] md:py-[6%] grid grid-cols-1 gap-14 md:gap-0 md:grid-cols-2 bg-cover bg-no-repeat "
       style={{
         backgroundImage:
           "url('https://img.freepik.com/free-photo/gradient-bokeh-digital-business-wallpaper_53876-110796.jpg?t=st=1718477356~exp=1718480956~hmac=da3495113ebb49f7a6c3b5fbe49fb935fe56b42e9fc6fab15cdaf22a08f1d8e1&w=740')", 

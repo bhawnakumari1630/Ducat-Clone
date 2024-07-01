@@ -1,0 +1,8 @@
+@media (max-width : 536px ) {
+    #sm_menuSlider > p {
+        border-bottom: 1.5px solid rgba(59, 97, 221, 0.5) ;
+        padding: 0.5rem 0.5rem 0.5rem;
+        font-size: 1rem;
+        color: rgb(58, 58, 58);
+    }
+}

@@ -9,11 +9,13 @@ import StudentReviews from "../../component/StudentReview/StudentReviews";
 import RightCourse from "../../component/RightCourse/RightCourse";
 import Footer from "../../component/Footer/Footer";
 import FooterForm from "../../component/Footer/FooterForm";
+import Scroll from "../../component/Scroll/Scroll";
 
 function Home() {
   return (
     <div className="flex flex-col  ">
       <div className=" flex-1 pb-7 md:pb-0 ">
+        {/* <Scroll /> */}
         <HeroSection />
         <HomeBar />
         <TopPrograms />
@@ -24,7 +26,7 @@ function Home() {
         <PlacementPartners />
         <Footer />
       </div>
-      <div className="md:h-28  h-[11rem] ">
+      <div className="md:h-28 relative h-[2.3rem] ">
         <FooterForm />
       </div>
     </div>

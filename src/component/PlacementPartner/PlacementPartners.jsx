@@ -3,10 +3,10 @@ import React from 'react'
 import WorkAtData from '../../data/WorkAtData'
 
 function PlacementPartners() {
-  console.log(WorkAtData)
+  // console.log(WorkAtData)
 
   const companies = WorkAtData.map(item => {
-    return <div className=' relative rounded-md overflow-hidden border border-slate-400 h-28 w-40  transition-all duration-200 ease-linear '>
+    return <div key={`workAt-${item.id}`} className=' relative rounded-md overflow-hidden border border-slate-400 h-20 w-28 md:h-28 md:w-40  transition-all duration-200 ease-linear '>
       <div className=' absolute top-0 bg-white h-full w-full bg-blac px-3 py-1 hover:opacity-0 duration-150 '>
         <img src={item.image} alt="" className=' w-36 ' />
       </div>
@@ -18,9 +18,9 @@ function PlacementPartners() {
 
   return (
     <div className='py-[7%] pb-[10%]  px-5 md:px-[7%] md:pb-[8%] lg:pt-[3%] lg:pb-[5%] space-y-8 capitalize'>
-        <h2 className=' px-3 text-3xl text-zinc-800 '> Our placement partners </h2>
+        <h2 className=' px-3 text-2xl md:text-3xl text-zinc-800 '> Our placement partners </h2>
 
-        <div className=' px-[2%] grid grid-cols-4 lg:grid-cols-5 place-items-center gap-5 '>
+        <div className=' px-[4%] grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5  '>
           {
             WorkAtData &&  companies
           }

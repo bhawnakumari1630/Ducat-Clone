@@ -1,8 +1,11 @@
 import React from "react";
+import { IoIosCall } from "react-icons/io";
+import { MdEmail, MdOutlineEmail } from "react-icons/md";
 
 function FooterForm() {
   return (
-    <div className=" fixed py-6 md:py- md:py-9 z-10  sm:block w-full bottom-0 px-[2%]  bg-sky-800 ">
+    <div className=" fixed py-3 rounded-t-xl md:rounded-none  md:py-9 z-10  sm:block w-full bottom-0 px-[2%]  bg-sky-800 ">
+      <div className=" hidden md:block ">
       <form className=" grid grid-cols-3 mb-5 md:mb-0 md:flex items-center justify-between gap-3 ">
         <div className="flex-1">
           <input
@@ -55,6 +58,11 @@ function FooterForm() {
       </form>
       <div className="md:hidden w-full inlin px-12  text-center  py-2.5 rounded-lg  hover:ring font-semibold bg-yellow-400 hover:bg-yellow-500 ring-yellow-300   text-zinc-950  ">
         <button className=""> submit </button>
+      </div>
+      </div>
+      <div className=" py-1.5 h-[3rem] flex text-3xl text-white ">
+        <IoIosCall className='flex-1' />
+        <MdEmail className='flex-1' />
       </div>
     </div>
   );

@@ -22,7 +22,7 @@ export default function Courses() {
 
   return (
     <div className="w-full pb-[%]  " >
-      <div className="pb-[5%] lg:grid grid-cols-3 gap-[4%] py-[5%]  px-[6%]  " style={{ background : '#E8F7FF' }}>
+      <div className="lg:grid grid-cols-3 gap-[4%] py-10 md:py-[5%]  px-[6%]  " style={{ background : '#E8F7FF' }}>
         <div className="lg:flex lg:gap-[5%] col-span-2 " >
           { courseData && <CourseDetail details={courseData} /> }
         </div>
@@ -33,7 +33,7 @@ export default function Courses() {
       </div>
       <ExploreCourses />
       <HomeBar />
-      <div className="pb-[4%] pt-[3%]  px-[%] ">
+      <div className="pb-[4%] pt-[7%] md:pt-[5%]  ">
        <Reviews />
       </div>
       <Footer />

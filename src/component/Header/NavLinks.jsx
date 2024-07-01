@@ -19,18 +19,16 @@ function NavLinks() {
   const [showOther, setShowOther] = useState(false);
 
   useEffect(() => {
-
     const handleResize = () => {
       setBrowserWidth(window.innerWidth);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     // Cleanup function to remove the event listener
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
-
   }, [browserWidth]);
 
   useEffect(() => {
@@ -42,6 +40,7 @@ function NavLinks() {
   const courseList = courses.map((item) => {
     return (
       <p
+        key={item.id}
         className=" hover:bg-slate-300 px-2 py-0.5 hover:text-zinc-800 rounded-md capitalize "
         onClick={() => {
           setListShow((prev) => !prev);
@@ -74,7 +73,7 @@ function NavLinks() {
         </NavLink>
       </p>
     );
-  })
+  });
   const otherPages_lg = other_Pages_lg.map((item) => {
     return (
       <p
@@ -90,9 +89,8 @@ function NavLinks() {
         </NavLink>
       </p>
     );
-  })
-  const otherPagesList =  browserWidth <= "1024px" ? otherPages : otherPages_lg ;
-
+  });
+  const otherPagesList = browserWidth <= "1024px" ? otherPages : otherPages_lg;
 
   return (
     <>
@@ -127,6 +125,7 @@ function NavLinks() {
       >
         <NavLink to={"/corporate-training"}> Corporate Training </NavLink>
       </p>
+
       <p
         onClick={() => setShowMenuItem((prev) => !prev)}
         className="px-1 hover:text-zinc-800 lg:hidden xl:inline "
@@ -134,25 +133,26 @@ function NavLinks() {
         <NavLink to={"/placement"}> Placements </NavLink>
       </p>
 
-      <NavLink to={"/career-guidance"} as={""} className="">
-        <p className=" flex gap-[10%] lg:gap-0 lg:flex-col-reverse items-center  px-1 hover:text-zinc-800 text-cente mt-4 lg:-mt-6 ">
+        <p >
+      <NavLink to={"/career-guidance"} as={""} className=" flex gap-[10%] lg:gap-0 lg:flex-col-reverse items-center   hover:text-zinc-800 sm:mt-4 lg:-mt-6 ">
           <div className="flex items-center gap-1">
             <img
               src="https://www.ducatindia.com/_next/image?url=%2Fstatic%2Fimages%2Fbadge.webp&w=32&q=75"
               alt=""
-              className=" size-4 lg:size-6"
+              className=" size-4 md:size-4 lg:size-6"
             />
             <span> Career Guidance </span>
           </div>
-          <div className=" text-[10px]  inline-flex gap-[2px] items-center tracking-wider  rounded-full px-2 py-1 text-zinc-100 lg:text-xs bg-orange-500 border border-orange-400 ">
+          <div className=" text-[0.7rem] md:text-[0.7px]  inline-flex gap-1 items-center tracking-wider  rounded-full px-2 py-1 sm:px-2 sm:py-1 text-zinc-100 lg:text-xs bg-orange-500 border border-orange-400 ">
             <AiFillThunderbolt />
-            <span className=" text-[8px] uppercase font-sans font-semibold ">
+            <span className=" text-[0.56rem] md:text-[0.7rem] uppercase font-sans font-semibold ">
               {" "}
               AI-powered{" "}
             </span>
           </div>
-        </p>
       </NavLink>
+        </p>
+      
       <p className="px-1 hover:text-zinc-800 ">
         <NavLink to={"/online-registration"}> online registration </NavLink>
       </p>
@@ -177,7 +177,7 @@ function NavLinks() {
             {otherPagesList}
           </div>
         </NavLink>
-      </p> 
+      </p>
     </>
   );
 }

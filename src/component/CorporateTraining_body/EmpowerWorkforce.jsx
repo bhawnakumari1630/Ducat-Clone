@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 function EmpowerWorkforce() {
   return (
     <div
-      className="py-[5%] ps-[9%] pe-[3%] grid grid-cols-1  md:grid-cols-2 h-full place-items-center  gap-y-16 md:gap-0 relative "
+      className="py-[10%] px-5 md:[5%] md:ps-[9%] md:pe-[3%] grid grid-cols-1  md:grid-cols-2 h-full place-items-center  gap-y-16 md:gap-0 relative "
       style={{
         backgroundImage: `url('https://www.ducatindia.com/_next/static/media/empower.306d8e75.webp')`,
       }}

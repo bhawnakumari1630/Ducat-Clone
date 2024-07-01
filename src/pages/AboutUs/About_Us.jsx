@@ -9,9 +9,9 @@ import Footer from "../../component/Footer/Footer";
 
 function About_Us() {
   return (
-    <div className='w-full'>
+    <div className='w-full pb-0 '>
       <HeroSection_About />
-      <div className=''>
+      <div className=' space-y-3 md:space-y-1 py-5 px-5 md:py-0 '>
         <OurMission />
         <OurVision />
         <WhatDo />

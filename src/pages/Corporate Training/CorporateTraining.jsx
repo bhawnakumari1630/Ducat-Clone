@@ -19,14 +19,14 @@ function CorporateTraining() {
   return (
     <div>
       <HeroSection_Corporate />
-      <div className=" text-center pt-[5%] pb-0 space-y-5 md:space-y-10 px-[1%] md:px-[4%] ">
+      <div className=" text-center pt-12 md:pt-[5%]  md:pb-0 space-y-8 md:space-y-10 px-[1%] md:px-[4%] ">
         <h2 className=" border-b-4 border-orange-400 inline  pb-1 text-3xl text-zinc-900 font-semibold capitalize ">
           {" "}
           our placement partners{" "}
         </h2>
         <CompaniesSlider />
       </div>
-      <div className=" lg:px-0 ">
+      <div className=" lg:px-0 pb-[3%] space-y-5 ">
       <EmployeeEmpowered />
       <WhyChoose />
       <WhatIs />

@@ -11,7 +11,7 @@ function TopCourses() {
           top courses
         </h2>
       </div>
-      <div className=" px-[8%] lg:px-2 grid gap-5 items-center lg:grid-cols-4 ">
+      <div className=" px-5 md:px-[8%] lg:px-2 grid gap-5 items-center lg:grid-cols-4 ">
         {topCourses}
       </div>
     </div>

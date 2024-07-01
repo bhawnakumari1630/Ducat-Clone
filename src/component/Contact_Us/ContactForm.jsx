@@ -34,7 +34,7 @@ function ContactForm() {
     setEnquiryDetail((prev) => ({ ...prev, [name]: value.trim() }));
   };
   return (
-    <div className="  mx-auto max-w-[85%] p-[3%] md:px-0 md:max-w-xl lg:max-w-4xl ">
+    <div className="  mx-auto  p-[3%] md:px-0 md:max-w-xl lg:max-w-4xl ">
       <div className="  shadow-md shadow-gray-300 space-y-5 md:space-y-4 px-10 md:px-8 py-7 rounded-xl bg-white/70 ">
         <div className="text-center ">
           <h2 className="text-2xl lg:text-3xl font-semibold text-blue-900 capitalize "> connect with Us </h2>

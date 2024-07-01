@@ -2,7 +2,7 @@ import React from "react";
 import Stars from "../Stars/Stars";
 
 function RightCourse_Card({ data }) {
-  console.log(data);
+  // console.log(data);
   const { id, title, image, duration, eligibility } = data;
   // const  cards =
   return (

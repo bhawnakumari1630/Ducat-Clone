@@ -20,7 +20,7 @@ function OurBranches() {
     })
 
   return (
-    <div className='space-y-8 pt-[3%] lg:pt-[5%] pb-[10%] md:pb-[12%] lg:pb-[9%] px-[11%] md:px-[5%] lg:px-[10%] '>
+    <div className='space-y-8 pt-[3%] lg:pt-[5%] pb-[10%] md:pb-[12%] lg:pb-[9%] px-[8%] md:px-[5%] lg:px-[10%] '>
         <h2 className=' text-center capitalize text-3xl tracking-wider text-slate-700 '> Our branches </h2>
         <div className='grid items-center md:grid-cols-2 gap-y-5 md:gap-y-[4%]  gap-x-5 lg:gap-x-[5%] '>
             {branchCard }

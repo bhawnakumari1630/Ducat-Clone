@@ -7,10 +7,10 @@ import SidebarSocial from './component/SidebarSocial/SidebarSocial'
 
 function Layout() {
   return (
-    <div className='relativ'>
+    <div className='scrollNone2'>
         <Header />
         <SidebarSocial />
-        <div className=' overflow-auto '>
+        <div className=' scrollNone overflow-auto  '>
             <Outlet/>
         </div>
         {/* <FooterForm/> */}
